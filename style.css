@@ -1,0 +1,96 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 30px;
+	text-align: center;
+}
+
+real-digital-form {
+	border: 1px solid #e9e9e9;
+	border-radius: 16px;
+	box-shadow: 0 2px 8px #e9e9e9;
+	display: inline-grid;
+	background-color: #ffffff;
+	padding: 30px;
+}
+
+real-digital-form img {
+	height: auto;
+	margin: auto;
+	width: 150px;
+}
+
+real-digital-textfield input::placeholder {
+	color: #a9a9a9;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+
+real-digital-textfield input {
+	border: none;
+	border-bottom: 1px solid #e9e9e9;
+	font-size: 16px;
+	margin: 15px 0 5px 0;
+	padding: 15px;
+	transition: ease .3s;
+	outline: none;
+	width: 380px;
+}
+
+real-digital-textfield input:focus {
+	border-bottom: 2px solid #003970;
+}
+
+real-digital-textfield.error input {
+	border-bottom: 2px solid #ba0c2f;
+}
+
+real-digital-textfield p {
+	color: #ba0c2f;
+	font-size: 12px;
+	margin: 0 15px;
+	text-align: left;
+}
+
+real-digital-button {
+	background-color: #ba0c2f;
+	border-radius: 35px;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 10px 0;
+	padding: 20px 70px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: ease .3s;
+}
+
+real-digital-button[disabled] {
+	background-color: #a9a9a9;
+	cursor: auto;
+}
+
+real-digital-button:not([disabled]):hover {
+	background-color: #f1224b;
+}
+
+hide {
+	display: none;
+}
+
+show {
+	display: block;
+}
+
+#result {
+	font-weight: bold;
+	margin: 30px;
+}
+
+#result.success {
+	color: #006400;
+}
+
+#result.error {
+	color: #ba0c2f;
+}
