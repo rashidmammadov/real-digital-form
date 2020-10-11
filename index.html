@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js"></script>
+	<body>
+		<real-digital-form action="/post" method="POST">
+			<real-digital-textfield name="name" validation="[a-z]+"></real-digital-textfield>
+			<real-digital-textfield name="phone" validation="[0-9]+"></real-digital-textfield>
+			<real-digital-textfield name="subject"></real-digital-textfield>
+			<real-digital-button>Send</real-digital-button>
+		</real-digital-form>
+		<p id="result"></p>
+	</body>
+</html>
